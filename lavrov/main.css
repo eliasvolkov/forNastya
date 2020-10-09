@@ -34,6 +34,11 @@ a {
     min-height: 100vh;
     padding: 0 4rem;
     box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .container--welcome {
@@ -59,16 +64,16 @@ a {
 /*=========== WELCOME =============*/
 
 .headline-wrapper {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
 
-    position: absolute;
+    /* position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%); */
 }
 .headline {
     font-size: 5rem;
@@ -80,9 +85,35 @@ a {
     box-sizing: border-box;
     padding: 2rem 5rem;
     border-radius: 1rem;
-}
-
-.btn--weclome {
+    text-align: center;
     font-weight: bold;
     font-size: 2rem;
+}
+
+/*=========== FIRST QUESTION =============*/
+
+h2 {
+    font-size: 4rem;
+}
+
+strong {
+    font-size: 3.5rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.btn--first {
+    background-color: #cec4a1;
+    margin-top: auto;
+}
+.description {
+    font-size: 2.8rem;
 }
